@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)https://demo.tastyigniter.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript" src="./Welcome To TastyIgniter! - TastyIgniter Demo_files/cd53c6a8f0"></script><script src="./Welcome To TastyIgniter! - TastyIgniter Demo_files/nr-1044.min.js.download"></script><script async="" src="./Welcome To TastyIgniter! - TastyIgniter Demo_files/analytics.js.download"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="">
+<meta name="keywords" content="">
+                    <link href="https://demo.tastyigniter.com/main/views/themes/tastyigniter-orange/images/favicon.ico" rel="shortcut icon" type="image/ico">
+                <title>Welcome To TastyIgniter! - TastyIgniter Demo</title>
+        <link href="./Welcome To TastyIgniter! - TastyIgniter Demo_files/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap-css">
+		<link href="./Welcome To TastyIgniter! - TastyIgniter Demo_files/font-awesome.min.css" rel="stylesheet" type="text/css" id="font-awesome-css">
+		<link href="./Welcome To TastyIgniter! - TastyIgniter Demo_files/select2.css" rel="stylesheet" type="text/css" id="select2-css">
+		<link href="./Welcome To TastyIgniter! - TastyIgniter Demo_files/select2-bootstrap.css" rel="stylesheet" type="text/css" id="select2-bootstrap-css">
+		<link href="./Welcome To TastyIgniter! - TastyIgniter Demo_files/jquery.raty.css" rel="stylesheet" type="text/css" id="jquery-raty-css">
+		<link href="./Welcome To TastyIgniter! - TastyIgniter Demo_files/fonts.css" rel="stylesheet" type="text/css" id="fonts-css">
+		<link href="./Welcome To TastyIgniter! - TastyIgniter Demo_files/stylesheet.css" rel="stylesheet" type="text/css" id="local-module-css">
+		<link href="./Welcome To TastyIgniter! - TastyIgniter Demo_files/flexslider.css" rel="stylesheet" type="text/css" id="flexslider-css">
+		<link href="./Welcome To TastyIgniter! - TastyIgniter Demo_files/stylesheet(1).css" rel="stylesheet" type="text/css" id="slideshow-css">
+		<link href="./Welcome To TastyIgniter! - TastyIgniter Demo_files/featured_menus.css" rel="stylesheet" type="text/css" id="featured_menus-css">
+		<link href="./Welcome To TastyIgniter! - TastyIgniter Demo_files/stylesheet(2).css" rel="stylesheet" type="text/css" id="stylesheet-css">
+        
+<style type="text/css">body {font-family: "Oxygen",Arial,sans-serif;font-size: 13px;font-weight: normal;font-style: normal;color: #333333;}.menu-name, .panel-default > .panel-heading {color: #333333;}.text-muted { color: #7a7a7a;}body, #page-wrapper {background-color: #eaeaed;}.partial .local-box-fluid, .partial .local-box-fluid .panel { background-color: #ed561a; border-color: #ed561a}.step-item .icon i { color: #ed561a; border-color:#ed561a;}.newsletter-subscribe { background-color: #ed561a; color:#333333}.nav-tabs-line > li.active > a, .nav-tabs-line > li.active > a:hover, .nav-tabs-line > li.active > a:focus, .nav-tabs-line > li.open a, .nav-tabs-line > li > a:hover, .nav-tabs-line > li > a:focus,.nav-tabs-line > li.open a, .nav-tabs-line > li:hover, .nav-tabs-line > li:focus, .nav-tabs-line > li.active, .nav-tabs-line > li.active:hover, .nav-tabs-line > li.active:focus { border-bottom-color: #ed561a;}.newsletter-subscribe { color:#333333}#main-header, #main-header .navbar-collapse, .modal-header {background-color: #ed561a;}#main-header .dropdown-menu > li > a, .modal-header { color: #333333;}#main-header .dropdown-menu { background-color: #ed561a;}#main-header .logo img {height: 40px !important;}#main-header .logo {padding-top: 10px;padding-bottom: 10px;}#main-header .navbar-nav > li > a {font-family: "Oxygen",Arial,sans-serif;font-size: 16px;font-weight: normal;font-style: normal;color: #ffffff;}#main-header .navbar-nav > li > a:focus, #main-header .navbar-nav > li > a:hover, .local-box-fluid h2  {color: #ffffff;}#page-content div.content, div.content .panel, div.content .list-group-item, .modal-content { background-color: #ffffff;}#page-content div.content-wrap { background-color: #ffffff; border-width: 1px; border-style: solid; padding:15px; border-radius:4px;margin-bottom: 20px;}#page-content div.content-wrap, #page-content div.content, #page-content .panel, #page-content .panel .panel-heading, #page-content .nav-tabs, #page-content .list-group-item, #page-content th, #page-content td, #page-content .tab-content-line, .modal-content, #local-information .list-group-item { border-color: #dddddd;}#heading {color: #333333;}.under-heading {background-image: none; height: auto;height: 50px;}.partial .panel {background-color: #ffffff;}.partial .panel, .partial .panel-default > .panel-heading, .partial .panel-cart, #page-content .cart-total .table td,.panel-cart .location-control, .panel-cart .cart-coupon, #local-info .panel-local, .panel-local .panel-heading {border-color: #eeeeee;}.partial .module-box li, .partial > .module-box .list-group-item, #category-box .list-group-item a, .cart-items ul li {background-color: transparent;border-color: #eeeeee; border-width: 0 0 1px; border-style: solid;}.partial .module-box .panel, .partial .list-group-item a, .cart-items ul li .amount, .cart-total .table td,.cart-items ul li .name, .cart-items ul li .name-image:focus .name, .cart-items ul li .name-image:hover .name {color: #484848;}.partial .text-muted { color: #7a7a7a;}a, .btn-link { color: #428bca;}a:hover, a:focus, .btn-link:focus, .btn-link:hover,#page-footer .main-footer a:hover, #page-footer .main-footer a:focus,#page-footer .bottom-footer a:hover, #page-footer .bottom-footer a:focus,a.list-group-item:hover, .list-group-item > a:hover,.side-bar a.list-group-item.active, .side-bar .list-group-item.active > a,.side-bar a.list-group-item:hover, .side-bar .list-group-item > a:hover,a.list-group-item.active, .list-group-item > a.active { color: #2a6496;}.btn-default, .panel-default .panel-heading, .panel-nav-tabs.panel-default .panel-heading {background-color: #ffffff;border-color: #cccccc;color: #333333;}.btn-default:hover, .btn-default:focus, .btn-default.active, .btn-default:active {background-color: #ffffff;border-color: #b8b8b8;color: #1f1f1f;}.btn-primary, .panel-primary .panel-heading, .panel-nav-tabs.panel-primary .panel-heading {background-color: #1c4dc1;border-color: #3545bd;color: #ffffff;}.btn-primary:hover, .btn-primary:focus, .btn-primary.active, .btn-primary:active {background-color: #0839ad;border-color: #2131a9;color: #ffffff;}.nav-pills > li.active > a {background-color: #1c4dc1;color: #ffffff;}.btn-success, .panel-success .panel-heading, .panel-nav-tabs.panel-success .panel-heading {background-color: #5cb85c;border-color: #4cae4c;color: #ffffff;}.btn-success:hover, .btn-success:focus, .btn-success.active, .btn-success:active {background-color: #48a448;border-color: #389a38;color: #ffffff;}.btn-danger, .panel-danger .panel-heading, .panel-nav-tabs.panel-danger .panel-heading {background-color: #d9534f;color: #ffffff;}.btn-danger:hover, .btn-danger:focus, .btn-danger.active, .btn-danger:active {background-color: #c53f3b;color: #ffffff;}.btn-warning, .panel-warning .panel-heading, .panel-nav-tabs.panel-warning .panel-heading {background-color: #f0ad4e;border-color: #f0ad4e;color: #ffffff;}.btn-warning:hover, .btn-warning:focus, .btn-warning.active, .btn-warning:active {background-color: #dc993a;border-color: #dc993a;color: #ffffff;}.btn-info, .panel-info .panel-heading, .panel-nav-tabs.panel-info .panel-heading {background-color: #5bc0de;border-color: #5bc0de;color: #ffffff;}.btn-info:hover, .btn-info:focus, .btn-info.active, .btn-info:active {background-color: #47acca;border-color: #47acca;color: #ffffff;}#page-footer {background-color: #edeff1; background-image:linear-gradient(to bottom, #edeff1, #edeff1);}#page-footer .bottom-footer {background-color: #fbfbfb;}#page-footer .main-footer, #page-footer .main-footer a, #page-footer .main-footer .footer-title { color: #9ba1a7;}#page-footer .bottom-footer, #page-footer .bottom-footer a, #page-footer .bottom-footer .footer-title { color: #a3aaaf;}</style>
+		        <script src="./Welcome To TastyIgniter! - TastyIgniter Demo_files/jquery-1.11.2.min.js.download" charset="utf-8" type="text/javascript" id="jquery-js"></script>
+		<script src="./Welcome To TastyIgniter! - TastyIgniter Demo_files/bootstrap.min.js.download" charset="utf-8" type="text/javascript" id="bootstrap-js"></script>
+		<script src="./Welcome To TastyIgniter! - TastyIgniter Demo_files/select2.js.download" charset="utf-8" type="text/javascript" id="select-2-js"></script>
+		<script src="./Welcome To TastyIgniter! - TastyIgniter Demo_files/jquery.raty.js.download" charset="utf-8" type="text/javascript" id="jquery-raty-js"></script>
+		<script src="./Welcome To TastyIgniter! - TastyIgniter Demo_files/jquery.flexslider.js.download" charset="utf-8" type="text/javascript" id="flexslider-js"></script>
+		<script src="./Welcome To TastyIgniter! - TastyIgniter Demo_files/common.js.download" charset="utf-8" type="text/javascript" id="common-js"></script>        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67223820-4', 'auto');
+  ga('send', 'pageview');
+
+</script>		<script type="text/javascript">
+			var alert_close = '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>';
+
+			var js_site_url = function(str) {
+				var strTmp = "https://demo.tastyigniter.com/" + str;
+			 	return strTmp;
+			};
+
+			var js_base_url = function(str) {
+				var strTmp = "https://demo.tastyigniter.com/" + str;
+				return strTmp;
+			};
+
+            var pageHeight = $(window).height();
+
+			$(document).ready(function() {
+				if ($('#notification > p').length > 0) {
+					setTimeout(function() {
+						$('#notification > p').slideUp(function() {
+							$('#notification').empty();
+						});
+					}, 3000);
+				}
+
+				$('.alert').alert();
+				$('.dropdown-toggle').dropdown();
+                $('a[title], i[title]').tooltip({placement: 'bottom'});
+                $('select.form-control').select2();
+			});
+		</script>
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+                	</head>
+	<body class="">
+		<div id="opaclayer" onclick="closeReviewBox();"></div>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+		<header id="main-header">
+			<div class="container">
+                <div class="row">
+                    <div class="col-sm-5">
+						<button type="button" class="btn-navbar navbar-toggle" data-toggle="collapse" data-target="#main-header-menu-collapse">
+							<i class="fa fa-align-justify"></i>
+						</button>
+                        <div class="logo">
+                            <a class="" href="https://demo.tastyigniter.com/">
+																	TastyIgniter Demo															</a>
+						</div>
+					</div>
+                    <div class="col-sm-7">
+						<div class="collapse navbar-collapse" id="main-header-menu-collapse">
+							<ul class="nav navbar-nav navbar-right">
+																	<li><a href="https://demo.tastyigniter.com/reservation">Reservation</a></li>
+								
+																	<li><a href="https://demo.tastyigniter.com/login">Login</a></li>
+									<li><a href="https://demo.tastyigniter.com/register">Register</a></li>
+								
+																																																															
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div id="page-wrapper" class="content-area">
+			
+            <div id="content-top" class="partial partial-area "><div id="module-slideshow-1" class="module-slideshow"><div id="slider">
+	<div class="flexslider">
+		<ul class="slides">
+																		<li class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
+							<div class="slider-caption">
+															</div>
+
+							<img src="./Welcome To TastyIgniter! - TastyIgniter Demo_files/slide-1170x420.jpg" draggable="false">
+						</li>
+																				<li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;" class="">
+							<div class="slider-caption">
+															</div>
+
+							<img src="./Welcome To TastyIgniter! - TastyIgniter Demo_files/slide1-1170x420.jpg" draggable="false">
+						</li>
+																				<li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;" class="">
+							<div class="slider-caption">
+															</div>
+
+							<img src="./Welcome To TastyIgniter! - TastyIgniter Demo_files/slide2-1170x420.jpg" draggable="false">
+						</li>
+													  	</ul>
+	<ol class="flex-control-nav flex-control-paging"><li><a class="flex-active">1</a></li><li><a class="">2</a></li><li><a class="">3</a></li></ol><ul class="flex-direction-nav"><li><a class="flex-prev" href="https://demo.tastyigniter.com/#"></a></li><li><a class="flex-next" href="https://demo.tastyigniter.com/#"></a></li></ul></div>
+</div>
+<script type="text/javascript"><!--
+	$('.flexslider').flexslider({
+		prevText: '',
+		nextText: ''
+	});
+//--></script>
+</div><div id="module-local-module-2" class="module-local_module"><div id="local-box" class="local-box-fluid">
+	<div class="container">
+		<div class="row">
+							<div id="local-search" class="col-md-12 text-center">
+					<div class="panel panel-local">
+						<div class="panel-body">
+							<h2>Order delicious food online</h2>
+							<span class="search-label sr-only">Enter your address/postcode to order</span>
+							<div class="col-xs-12 col-sm-6 col-md-5 center-block">
+																	<form id="location-form" method="POST" action="https://demo.tastyigniter.com/local_module/local_module/search" role="form">
+										<div class="input-group postcode-group">
+											<input type="text" id="search-query" class="form-control text-center postcode-control input-lg" name="search_query" placeholder="Enter your address/postcode to order" value="E9 6QH">
+											<a id="search" class="input-group-addon btn btn-primary" onclick="searchLocal()">View menu</a>
+										</div>
+									</form>
+															</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			
+			<div id="local-alert" class="col-xs-12 col-sm-6 center-block">
+				<div class="local-alert"></div>
+							</div>
+
+					</div>
+	</div>
+<script type="text/javascript"><!--
+	$(document).ready(function() {
+		$('.review-toggle').on('click', function() {
+			$('a[href="#reviews"]').tab('show');
+		});
+	});
+
+	function toggleLocalSearch() {
+		if ($('.panel-local .panel-heading .local-search').is(":visible")) {
+			$('.panel-local .panel-heading .local-search').slideUp();
+			$('.panel-local .panel-heading .local-change').slideDown();
+		} else {
+			$('.panel-local .panel-heading .local-search').slideDown();
+			$('.panel-local .panel-heading .local-change').slideUp();
+		}
+	}
+
+	function searchLocal() {
+		var search_query = $('input[name=\'search_query\']').val();
+
+		$.ajax({
+			url: js_site_url('local_module/local_module/search'),
+			type: 'POST',
+			data: 'search_query=' + search_query,
+			dataType: 'json',
+			success: function(json) {
+				updateLocalBox(json);
+			}
+		});
+	}
+
+	function updateLocalBox(json) {
+		var alert_close = '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>';
+		var local_alert = $('#local-alert .local-alert');
+		var alert_message = '';
+
+		if (json['redirect']) {
+			window.location.href = json['redirect'];
+		}
+
+		if (json['error']) {
+			alert_message = '<div class="alert">' + alert_close + json['error'] + '</div>';
+		}
+
+		if (json['success']) {
+			alert_message = '<div class="alert">' + alert_close + json['success'] + '</div>';
+		}
+
+		if ($('#cart-box').is(':visible')) {
+			$('#cart-box').load(js_site_url('cart_module/cart_module #cart-box > *'), function (response) {
+				if (alert_message != '') {
+					local_alert.empty();
+					local_alert.append(alert_message);
+					$('#local-alert').fadeIn('slow').fadeTo('fast', 0.5).fadeTo('fast', 1.0);
+					$('html, body').animate({scrollTop: 0}, 300);
+				}
+			});
+		} else {
+			if (alert_message != '') {
+				local_alert.empty();
+				local_alert.append(alert_message);
+				$('#local-alert').fadeIn('slow').fadeTo('fast', 0.5).fadeTo('fast', 1.0);
+				$('html, body').animate({scrollTop: 0}, 300);
+			}
+		}
+	}
+//--></script>
+</div>
+</div></div>
+<div id="page-content">
+	<div class="container top-spacing-10">
+	    <div class="content-wrap">
+            <div id="order-steps" class="row">
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="step-item">
+                        <div class="icon">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <h4>Search</h4>
+                        <p>Find and select restaurant that deliver to you by entering your postcode or address.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="step-item">
+                        <div class="icon">
+                            <i class="fa fa-mouse-pointer"></i>
+                        </div>
+                        <h4>Choose</h4>
+                        <p>Browse hundreds of menus to find the food you like.</p>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="step-item">
+                        <div class="icon">
+                            <i class="fa fa-credit-card"></i>
+                        </div>
+                        <h4>Pay by cash or card</h4>
+                        <p>It's quick, easy and secure. Pay by Cash on Delivery or PayPal.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="step-item">
+                        <div class="icon">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <h4>Enjoy</h4>
+                        <p>Food is prepared &amp; delivered to your door step or ready for pick-up at the restaurant.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div><div id="content-bottom" class="partial partial-area "><div id="module-featured-menus-1" class="module-featured_menus"><div id="featured-menu-box" class="module-box">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="heading-section bottom-spacing-20">
+				<h2>Featured Menu Items</h2>
+				<span class="under-heading"></span>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+					<div class="col-xs-6 col-sm-6 col-md-4">
+				<div class="featured-menu">
+					<div class="menu-thumb">
+						<img src="./Welcome To TastyIgniter! - TastyIgniter Demo_files/scotch_egg-400x300.jpg" alt="">
+					</div>
+					<div class="menu-content">
+						<div class="content-show">
+							<h4>SCOTCH EGG</h4>
+							<span>£2.00</span>
+						</div>
+						<div class="content-hide">
+							<p>Boiled egg wrapped in a ground meat mixture, coated in breadcrumbs, and deep-fried.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+					<div class="col-xs-6 col-sm-6 col-md-4">
+				<div class="featured-menu">
+					<div class="menu-thumb">
+						<img src="./Welcome To TastyIgniter! - TastyIgniter Demo_files/deluxe_bbq_shrimp-1-400x300.jpg" alt="">
+					</div>
+					<div class="menu-content">
+						<div class="content-show">
+							<h4>Special Shrimp Deluxe</h4>
+							<span>£12.99</span>
+						</div>
+						<div class="content-hide">
+							<p>Fresh shrimp sautéed in blended mixture of tomatoes, onion, peppers over choice of rice</p>
+						</div>
+					</div>
+				</div>
+			</div>
+					<div class="col-xs-6 col-sm-6 col-md-4">
+				<div class="featured-menu">
+					<div class="menu-thumb">
+						<img src="./Welcome To TastyIgniter! - TastyIgniter Demo_files/FriedWholeCatfishPlate_lg-400x300.jpg" alt="">
+					</div>
+					<div class="menu-content">
+						<div class="content-show">
+							<h4>Whole catfish with rice and vegetables</h4>
+							<span>£13.99</span>
+						</div>
+						<div class="content-hide">
+							<p>Whole catfish slow cooked in tomatoes, pepper and onion sauce with seasoning to taste</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+</div>
+</div></div>        </div>
+	</div>
+</div>
+</div>
+
+<footer id="page-footer">
+    
+    <div class="main-footer">
+	    <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 pull-right">
+                                                                <div class="social-bottom">
+                            <h4 class="footer-title">Follow us on:</h4>
+                            <ul class="social-icons">
+                                                                    <li><a class="fa fa-facebook" target="_blank" href="https://demo.tastyigniter.com/#"></a></li>
+                                
+                                                                    <li><a class="fa fa-twitter" target="_blank" href="https://demo.tastyigniter.com/#"></a></li>
+                                
+                                                                    <li><a class="fa fa-google-plus" target="_blank" href="https://demo.tastyigniter.com/#"></a></li>
+                                
+                                                                    <li><a class="fa fa-youtube" target="_blank" href="https://demo.tastyigniter.com/#"></a></li>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                                            </ul>
+                        </div>
+                                    </div>
+
+                <div class="col-xs-4 col-sm-3">
+                    <div class="footer-links">
+                        <h4 class="footer-title hidden-xs">My Account</h4>
+                        <ul>
+                            <li><a href="https://demo.tastyigniter.com/login">Login</a></li>
+                            <li><a href="https://demo.tastyigniter.com/register">Register</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-3">
+                    <div class="footer-links">
+                        <h4 class="footer-title hidden-xs">TastyIgniter Demo</h4>
+                        <ul>
+                            <li><a href="https://demo.tastyigniter.com/locations">Our Locations</a></li>
+                            <li><a href="https://demo.tastyigniter.com/contact">Contact Us</a></li>
+                                                            <li><a target="_blank" href="https://demo.tastyigniter.com/admin">Administrator</a></li>
+                                                    </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-3">
+                    <div class="footer-links">
+                        <h4 class="footer-title hidden-xs">Information</h4>
+                        <ul>
+                                                                                                                                                                    <li><a href="https://demo.tastyigniter.com/about-us">About Us</a></li>
+                                                                                                                                                <li><a href="https://demo.tastyigniter.com/pages?page_id=12">Policy</a></li>
+                                                                                                                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 wrap-all border-top">
+                    <!-- TastyIgniter is open source software developed and maintained by a volunteer community.
+                    It would be much appreciated by the TastyIgniter community if you left the full copyright and "powered by" notice intact,
+                    to show your support for TastyIgniter.  If you choose to remove or modify the copyright below,
+                    you may be refused support on the TastyIgniter Community Forums.
+
+                    This is free software, support us and we'll support you. -->
+                    © 2017 TastyIgniter Demo - <a target="_blank" href="http://tastyigniter.com/">Powered by TastyIgniter</a>                    <!-- End powered by -->
+                </div>
+            </div>
+        </div>
+	</div>
+</footer>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"cd53c6a8f0","applicationID":"47650608","transactionName":"ZV1TZUtRChJYVxcNWlwXZENQHw0PXVEbSkVaSA==","queueTime":0,"applicationTime":227,"atts":"SRpQEwNLGRw=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+</body></html>
